@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping template-2</title>
+    <link rel="shortcut icon" href="../public/images/wallpaper.jpeg">
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+        .brand-title{
+            font-weight: bold;
+            font-size: 40px;
+            font-family: cursive;
+            color: rgb(122, 0, 253);
+            font-style: italic;
+        }
+        .brand-title:hover{
+            color:cadetblue;
+        }
+        header{
+            font-size: 23px;
+            padding: 15px;
+            display: flex;
+            justify-content: space-around;
+            font-family: Arial, Helvetica, sans-serif
+        }
+        nav{
+            padding: 18px;
+            background-color: rgb(247, 245, 245);
+            border-radius: 15px;
+        }
+        .shortcut-icons{
+            padding-top: 15px;
+        }
+        nav span{
+            padding: 20px;
+            font-weight: bold;
+        }
+        .shortcut-buttons span{
+            padding: 15px; 
+            color: black;        
+        }
+        article{
+            background-color: rgb(123, 24, 24);
+            color: aqua;
+            font-size: 18px;
+            text-align: center;
+            padding: 10px;
+            border-radius: 7px;
+        }
+        .bi-lightning-fill{
+            color: gold;
+        }
+        section{
+    
+        }
+        footer{
+            padding: 20px;
+            background-color: rgb(28, 27, 27);
+            color: white;
+            display: grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr ;
+            border-radius: 7px;
+        }
+        .footer-brand-title{
+            font-weight: bold;
+            font-size: 30px;
+            font-family: cursive;
+            font-style: italic;
+            color:yellow;
+            padding-bottom: 20px;
+        }
+        .footer-icons span{
+            padding-right: 10px;
+            font-size: 20px;
+            color: cyan;
+        }
+        .footer-title{
+            font-weight: bold;
+            margin-bottom: 20px; 
+            font-size: 17px;
+        }
+        .footer-title~span{
+            display: block;
+            margin-bottom: 20px;
+        }
+        address span{
+            display: block;
+            margin-bottom: 15px;
+        }
+        main{
+            margin-top: 10px;
+            display: grid;
+            grid-gap: 5px;
+            grid-template-columns: 4fr 4fr 4fr;
+        }
+        .men, .woman, .kids{
+            border-radius: 5px;
+            background-color: rgb(170, 238, 215);
+            height: 500px;
+            background-size:cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;.......
+            }
+            .title{
+            font-size: 40px;
+            font-weight: bold;
+            color: black;
+            margin-top: 200px;
+            text-shadow: 2px 2px 2px grey;
+            }
+        .woman{
+            background-image: url("../Shopper/woman1.jpeg");
+        }
+        .men{
+            background-image: url("../Shopper/men.jpg");
+        }
+        .kids{
+            background-image: url("../Shopper/kids.jpg");
+        }
+        button{
+            width: 130px;
+            background-color: rgba(10, 168, 10, 0.737);
+            color: white;
+            font-size: 15px;
+            margin-top: -50px;
+            padding: 7px;
+            border-radius: 10px;
+            font-family: cursive;
+        }
+        .feature{
+            margin: 20px;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 3fr 3fr 3fr 3fr;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .feature .bi{
+            color: red;
+        }
+        .feature div{
+            margin-bottom: 10px;
+        }
+        .feature-text{
+            color: grey;
+        }
+        .site-main{
+            margin-top: 60px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+        }
+        .site-main-title{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: 50px;
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        .site-main-text{
+            font-size: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: grey;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        button:hover{
+            cursor: pointer;
+            color: black;
+            background-color: yellowgreen;
+        }
+        .section-bottom{
+            margin: 50px 200px 50px 290px;
+            gap: 40px;
+            height: 350px;
+            display: flex;
+            background-size: cover;           
+        }
+            .section-bottom-title1, .section-bottom-title2{
+                color: white;
+                font-weight: bold;
+                font-family:'Times New Roman', Times, serif;
+                margin-top: -150px;     
+            }
+            .section-bottom-title1{
+                color: white;
+                font-size: 25px;
+                line-height: 45px;
+                text-align: center;
+                text-shadow: 2px 2px 5px black;
+            }
+            .section-bottom-title2{
+                color: black;
+                font-size: 30px;
+                line-height: 65px;
+                margin: -260px 50px 100px 40px ;
+                text-shadow: 2px 2px 5px rebeccapurple;
+            }
+            .bag1 img, .bag2 img{
+                border: 1px solid rgb(198, 193, 193);
+                border-radius: 10px;
+            }
+           
+    </style>
+</head>
+<body>
+    <header>
+        <div class="brand-title">Shopper !</div>
+        <nav> 
+            <span>Home</span>
+            <span>Catalog</span>
+            <span>Shop</span>
+            <span>Pages</span>
+            <span>Blog</span>
+            <Span>Docs</Span>
+        </nav>
+        <div class="shortcut-icons">
+            <div class="shortcut-buttons">
+            <span class="bi bi-search"></span>
+            <span class="bi-person"></span>
+            <span class="bi-heart"></span>
+            <span class="bi bi-cart4"></span>
+            </div>
+        </div>
+    </header>
+    <article>
+        <span class="bi bi-lightning-fill"></span>
+        <span>HAPPY &nbsp; DEALS &nbsp; ON &nbsp; EVERYTHING</span>
+        <span class="bi bi-lightning-fill"></span>
+    </article>
+    <!------------------------------- section start---------------------------->
+    <section>
+    <!-----------------------------main start -------------------------------->
+        <main>
+            <div class="woman">
+                <div class="title">
+                    <h1>Woman</h1>
+                    <button>Shop Woman <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="men">
+                <div class="title">
+                    <h1>Men</h1>
+                    <button>Shop Men <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+            <div class="kids">
+                <div class="title">
+                    <h1>kids</h1>
+                    <button>Shop Kids <span class="bi bi-arrow-right"></span></button>
+                </div>
+            </div>
+        </main>
+        <!-----------------------------main end -------------------------------->
+
+        <!--------------------------- Features Start -------------------------->
+        <div class="feature">
+            <!-- feature one -->
+            <div>
+                <div >
+                    <span class="bi bi-truck"></span> FREE SHIPPING
+                </div>
+                <div class="feature-text">
+                    From all orders over $100
+                </div>
+            </div>
+            <!-- feature two -->
+            <div>
+                <div>
+                    <span class="bi bi-repeat"></span> FREE RETURNS
+                </div>
+                <div class="feature-text">
+                    Return money within 30 days
+                </div>
+            </div>
+            <!-- feature three -->
+            <div>
+                <div>
+                    <span class="bi bi-lock"></span> SECURE SHOPPING
+                </div>
+                <div class="feature-text">
+                    You're in safe hands
+                </div>
+            </div>
+            <!-- feature four -->
+            <div>
+                <div>
+                    <span class="bi bi-tag"></span> OVER 10,000 STYLES
+                </div>
+                <div class="feature-text">
+                    We have everything you need
+                </div>
+            </div>
+        </div>
+    <!--------------------------- Features end ----------------------------->
+
+    <!--------------------------- site main start ----------------------------->
+
+    <div class="site-main">
+        <div class="site-main-subtitle"> NEW COLLECTIONN </div>
+        <div class="site-main-title">Best Picks 2024</div>
+        <div class="site-main-text">Appear dry there darkness they're seas, dry waters thing fly midset Beast, <br><br>above fly brought Very green.</div>
+    </div>
+    <!--------------------------- site main end -------------------------------> 
+
+
+    <!--------------------------- section bottom start -------------------------------> 
+
+    <div class="section-bottom">
+        <div class="bag1">
+            <img src="../Shopper/bag1.jpg" alt="" width="300vh" height="340px">
+            <h1 class="section-bottom-title1">for Mens <br> CrossBody Bag</h1>
+        </div>
+        <div class="bag2">
+            <img src="../Shopper/bag2.jpg" alt="" width="600vh" height="340px">
+            <h1 class="section-bottom-title2">for Womans <br> Textutred <br> mini BagPack </h1>
+        </div>
+    </div>
+    </section>
+    <!--------------------------- section bottom end -------------------------------> 
+    <!------------------------------- section end ------------------------------>
+
+    <!------------------------------- footer start ------------------------------>
+
+    <footer>
+        <div class="footer-icons">
+            <div class="footer-brand-title">Shopper !</div>
+            <span class="bi bi-linkedin"></span>
+            <span class="bi bi-youtube"></span>
+            <span class="bi bi-twitter"></span>
+            <span class="bi bi-instagram"></span>
+        </div>
+        <div>
+            <div class="footer-title">SUPPORT</div>
+            <span>Contact Us</span>
+            <span>FAQ's</span>
+            <span>Size Guide</span>
+            <span>Shipping & Return</span>
+        </div>
+        <div>
+            <div class="footer-title">SHOP</div>
+            <span>Men's shopping</span>
+            <span>Woman's Shopping</span>
+            <span>Kid's Shopping</span>
+            <span>Discounts</span>
+        </div>
+        <div>
+            <div class="footer-title">COMPANY</div>
+            <span>Our Story</span>
+            <span>Careers</span>
+            <span>Terms & Conditions</span>
+            <span>Privacy & Cookie Pocily</span>
+        </div>
+        <div>
+            <div class="footer-title">CONTACT</div>
+            <Address>
+                <span>1-202-555-0105</span>
+                <span>1-202-555-0106</span>
+                <span>help@shopper.com</span>
+            </Address>
+        </div>
+    </footer>
+    <!------------------------------- footer start ------------------------------>
+</body>
+</html>
+
+
